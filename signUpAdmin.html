@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="AdminSignUpStyle.css">
+    <title>SignUp(Admin)</title>
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-expand-lg bg-dark navbar-dark .fixed-top">
+        <ul class="navbar-nav" style="display: flex; justify-content: space-between;">
+            <li class="nav-item">
+                <!--logo-->
+                <a href="userDashboard.html" class="nav-brand">
+                    <img src="logo.png" alt="Logo" style="margin-left: 40px; margin: 20px;">
+                </a>
+            </li>
+            <!--home link-->
+            <li class="nav-item" style="margin-right: 40px; margin: 20px;">
+                <a href="userDashboard.html" class="nav-link">
+                    <i class="material-icons" id='home-button' style='font-size: xx-large;'>&#xe88a;</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--messages here-->
+    <div class="container-fluid"></div>
+
+    <div class="container" style='margin-top: 50px;'>
+        <span><h1>Register Account: Admin</h1></span>
+        <hr>
+    </div>
+
+    <!--form-->
+    <div class="container" style="background-color: #f2f7f2; margin-top: 60px; padding: 30px; padding-left: 200px; padding-right: 200px;">
+        <!--form elements-->
+        <form action="" method="post" class='needs-validated'>
+            <div class="row">
+                <!--title-->
+                <div class="col">
+                    <label for="user name"><strong>Title:</strong></label>
+                    <select name="title" id="" class="form-control">
+                        <option value=""></option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                    </select>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+                <!--first name-->
+                <div class="col">
+                    <label for="user name"><strong>First Name: </strong></label>
+                    <input type="text" name="firstName" id="" class="form-control" required>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--last name-->
+                 <div class="col">
+                    <label for="user name"><strong>Last Name: </strong></label>
+                    <input type="text" name="lastName" id="" class="form-control" required>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+                <!--email-->
+                <div class="col">
+                    <label for="user name"><strong>Email: </strong></label>
+                    <div class="input-group">
+                        <input type="email" name="userEmail" id="" class="form-control" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">@example.com</span>
+                        </div>
+                   </div>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Passwords-->
+                <div class="col">
+                    <label for="user name"><strong>Password: </strong></label>
+                    <div class="input-group">
+                        <input type="password" name="password1" id="" class="form-control" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="material-icons">&#xe897;</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+                <div class="col">
+                    <label for="user name"><strong>Repeat Password: </strong></label>
+                    <div class="input-group">
+                        <input type="password" name="password2" id="" class="form-control" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="material-icons">&#xe897;</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+            </div>
+
+            <!--submit button-->
+            <button type="submit" class="btn btn-primary btn-block" style='margin-top: 20px;'>Submit</button>
+            <br>
+            <!--sign in link-->
+            <span style="font-size: medium;">
+                Do You Already have an account? <a href="signInAdmin.html">sign in</a>
+            </span>
+        </form>
+    </div>
+
+    <!--footer-->
+    <footer class="bg-dark text-center text-white" style="margin-top: 300px;">
+        <!-- contact information -->
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mopholosi-monyollo-b184001b2/" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Mopholosi" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+
+             <!-- email -->
+             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="material-icons">&#xe0e1;</i>
+            </a>
+          </section>
+        </div>
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://github.com/Mopholosi">Mopholosi Monyollo</a>
+        </div>
+      </footer>
+</body>
+</html>

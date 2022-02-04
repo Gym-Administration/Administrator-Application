@@ -1,0 +1,20 @@
+label {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+input:hover,
+select:hover {
+  background-color: rgb(201, 222, 248);
+  transition: 0.9s;
+}
+
+.nav-item:hover {
+  background-color: #8f948f;
+  transition: 0.7s;
+}
+
+#home-button:hover {
+  color: rgba(2, 2, 2, 0.267);
+  transition: 0.7s;
+}

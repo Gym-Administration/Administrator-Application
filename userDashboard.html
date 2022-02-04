@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="AdminSignUpStyle.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar-expand-lg bg-dark navbar-dark .fixed-top">
+        <ul class="navbar-nav" style="display: flex; justify-content: space-between;">
+            <li class="nav-item">
+                <!--logo-->
+                <a href="" class="nav-brand">
+                    <img src="logo.png" alt="Logo" style="margin-left: 40px; margin: 20px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="signInAdmin.html" class="nav-link">
+                    <p>
+                        <i class="material-icons" id='home-button' 
+                        style='font-size: xx-large;margin-top:20px; margin-right:50px;padding-left:20px;'>&#xe7ff</i>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="col" style="margin-bottom: 50px; text-align:center;">
+            <span>
+                <h4>
+                    <hr>Hey There! <br> Is this your first time? Start off by creating an account. Click 
+                    <a href="userSignUp.html">here</a> to begin..<hr>
+                </h4>
+            </span>
+        </div>
+    </div>
+    <!--table section-->
+    <div class="container-fluid" style="margin-top:70px;">
+        <div class="row">
+
+            <!--search user table-->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Registered Users</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."/>
+                                <div class="input-group-append">
+                                    <button type="submit" class="input-group-text btn btn-primary">
+                                        <i class="material-icons">&#xe8b6;</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!--User Accounts-->
+                <table id="myTable" class="table table-striped" >
+                    <thead class='table table-dark'>
+                        <tr class="table table-bordered" style='color: white;'>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>SMID</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class='table table-success' id="table-body">
+                         <!--fetch data from database-->
+                        <tr>
+                            <td>Alfreds </td>
+                            <td>Futterkiste</td>
+                            <td>22026003</td>
+                            <td>Signed Out</td>
+                            <td>
+                                <input type="button" value="sign In" class="btn btn-success">
+                                <input type="button" value="Update" class="btn btn-primary" style="margin-left: 0px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>james </td>
+                            <td>Futterkiste</td>
+                            <td>22026003</td>
+                            <td>Signed Out</td>
+                            <td                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       >
+                                <input type="button" value="sign In" class="btn btn-success">
+                                <input type="button" value="Update" class="btn btn-primary" style="margin-left: 0px;">      
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>jamey </td>
+                            <td>Futterkiste</td>
+                            <td>22026003</td>
+                            <td>Signed Out</td>
+                            <td>
+                                <input type="button" value="sign In" class="btn btn-success">
+                                <input type="button" value="Update" class="btn btn-primary" style="margin-left: 0px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>jack </td>
+                            <td>Futterkiste</td>
+                            <td>22026003</td>
+                            <td>Signed Out</td>
+                            <td>
+                                <input type="button" value="sign In" class="btn btn-success">
+                                <input type="button" value="Update" class="btn btn-primary" style="margin-left: 0px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+
+                <!--show more users-->
+               <!--  <form action="" method="get" style="margin-bottom: 60px;">
+                    <button class="btn btn-primary btn-block" style="margin-top: 0px;">Show More</button>
+                </form> -->
+            </div>
+
+            <!--signed in users table-->
+            <div class="col-md-6" style="margin-top: 200px; margin-bottom: 300px;">
+                <h2>Gym Register</h2>
+                <table class="table table-striped table-warning">
+                    <thead class="table table-dark">
+                        <!-- td><i class="material-icons">&#xe7fd;</i></td> -->
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>SMID</td>
+                        <td>Status</td>
+                    </thead>
+                    <tbody>
+                        <!--fetch data from database-->
+                        <tr>
+                            <td>Alfreds</td>
+                            <td>Futterkiste</td>
+                            <td>22026003</td>
+                            <td>
+                                <input type="button" value="sign out" class="btn btn-danger">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Alfreds </td>
+                            <td>Futterkiste</td>
+                            <td>22026003</td>
+                            <td>
+                                <input type="button" value="sign out" class="btn btn-danger">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white">
+        <!-- contact details -->
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mopholosi-monyollo-b184001b2/" role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Mopholosi" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+
+             <!-- email -->
+             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="material-icons">&#xe0e1;</i>
+            </a>
+          </section>
+        </div>
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://github.com/Mopholosi">Mopholosi Monyollo</a>
+        </div>
+      </footer>
+
+      
+      <script>
+
+    //  ----Filter users usersearch onkeyup----
+
+        function myFunction() {
+
+          // Declare variables
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
